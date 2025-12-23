@@ -16,7 +16,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 # Hosts permitidos
 ALLOWED_HOSTS = [
-    "bayala-backend-5.onrender.com",  # Backend no Render
+    "controller-backend-ui2g.onrender.com",  # Backend no Render
     "localhost",
     "127.0.0.1",
     "bayalastock.vercel.app",         # Produção no Vercel
