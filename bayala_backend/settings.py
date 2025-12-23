@@ -25,7 +25,6 @@ ALLOWED_HOSTS = [
     "bayala-frontend-djie8qp6c-yendzas-projects.vercel.app",
 ]
 # Aceitar qualquer subdomínio de vercel.app (previews)
-ALLOWED_HOSTS_REGEX = re.compile(r"^.*\.vercel\.app$")
 
 # Detecta se está em produção
 RENDER = config('RENDER', default=False, cast=bool)
