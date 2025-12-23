@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # Modo de depuração (desativar em produção)
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = ["controller-backend-ui2g.onrender.com"]
 
 # Nome da empresa e logo para o cabeçalho do Django Admin
 ADMIN_SITE_HEADER = 'Bayala'  # Nome da empresa
