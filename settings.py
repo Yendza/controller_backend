@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6fa8l*nu5#*0=&t5zy=k2*f(7$+)w^y)1h_i-+af01yo4g3zw='
 
 # Modo de depuração (desativar em produção)
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = []
 
