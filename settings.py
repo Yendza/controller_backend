@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-6fa8l*nu5#*0=&t5zy=k2*f(7$+)w^y)1h_i-+af01yo4g3zw=
 # Modo de depuração (desativar em produção)
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 # Nome da empresa e logo para o cabeçalho do Django Admin
 ADMIN_SITE_HEADER = 'Bayala'  # Nome da empresa
